@@ -1,0 +1,199 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    <div style="text-align: center">
+      <ion-icon name="md-ionitron"></ion-icon>
+    Métrole
+     <ion-icon name="md-git-network"></ion-icon>
+
+</div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<form (ngSubmit)="sendForm(form)">
+<ion-item>
+<ion-label>Départ</ion-label>
+<ion-select (ionChange)="changeStart($event)" class="HomePage">
+
+<ion-option value="St_philibert">St philibert </ion-option>
+<ion-option value="Bourg">Bourg </ion-option>
+<ion-option value="Maison_des_enfants">Maison des enfants </ion-option>
+<ion-option value="Mitterie">Mitterie</ion-option>
+<ion-option value="Pont_superieur">Pont superieur</ion-option>
+<ion-option value="Lomme_lambersart">Lomme lambersart</ion-option>
+<ion-option value="Canteleu">Canteleu</ion-option>
+<ion-option value="Bois_blancs">Bois blancs</ion-option>
+<ion-option value="Port_de_Lille">Port de Lille</ion-option>
+<ion-option value="Cormontaigne">Cormontaigne</ion-option>
+<ion-option value="Montebello">Montebello</ion-option>
+<ion-option value="Porte_des_postes">Porte des postes</ion-option>
+<ion-option value="Porte_d_Arras">Porte d Arras</ion-option>
+<ion-option value="Porte_de_Douai">Porte de Douai</ion-option>
+<ion-option value="Porte_de_Valenciennes">Porte de Valenciennes</ion-option>
+<ion-option value="Lille_Grand_Palais">Lille Grand Palais</ion-option>
+<ion-option value="Mairie_de_Lille">Mairie de Lille</ion-option>
+<ion-option value="Gare_Lille_Flandres">Gare Lille Flandres</ion-option>
+<ion-option value="Gare_Lille_Europe">Gare Lille Europe</ion-option>
+<ion-option value="St_Maurice_Pellevoisin">St Maurice Pellevoisin</ion-option>
+<ion-option value="Mons_Sarts">Mons Sarts</ion-option>
+<ion-option value="Mairie_de_Mons">Mairie de Mons</ion-option>
+<ion-option value="Fort_de_Mons">Fort de Mons</ion-option>
+<ion-option value="Les_Pres_Edgard_Pisani">Les Pres Edgard Pisani</ion-option>
+<ion-option value="Jean_Jaures">Jean_Jaures</ion-option>
+<ion-option value="Wasquehal_Pave_de_Lille">Wasquehal Pave de Lille</ion-option>
+<ion-option value="Wasquehal_Hotel_de_Ville">Wasquehal Hotel de ville</ion-option>
+<ion-option value="Croix_Centre">Croix Centre</ion-option>
+<ion-option value="Mairie_de_Croix">Mairie_de_Croix</ion-option>
+<ion-option value="Epeule_Montesquieu">Epeule Montesquieu</ion-option>
+<ion-option value="Charles_de_Gaulle">Charles de Gaulle</ion-option>
+<ion-option value="Euroteleport">Euroteleport</ion-option>
+<ion-option value="Roubaix_Grand_Place">Roubaix Grand Place</ion-option>
+<ion-option value="Gare_de_Roubaix">Gare de Roubaix</ion-option>
+<ion-option value="Alsace">Alsace</ion-option>
+<ion-option value="Mercure">Mercure</ion-option>
+<ion-option value="Carliers">Carliers</ion-option>
+<ion-option value="Gare_de_Tourcoing">Gare de Tourcoing</ion-option>
+<ion-option value="Tourcoing_Centre">Tourcoing Centre</ion-option>
+<ion-option value="Colbert">Colbert</ion-option>
+<ion-option value="Phalempins">Phalempins</ion-option>
+<ion-option value="Pont_de_Neuville">Pont de Neuville</ion-option>
+<ion-option value="Bourgogne">Bourgogne</ion-option>
+<ion-option value="CH_Dron">CH Dron</ion-option>
+<ion-option value="CHU_Eurasante">CHU Eurasante</ion-option>
+<ion-option value="CHU_Centre_O_Lambret">CHU Centre O Lambret</ion-option>
+<ion-option value="Porte_des_postes">Porte des postes</ion-option>
+<ion-option value="Wazemmes">Wazemmes</ion-option>
+<ion-option value="Gambetta">Gambetta</ion-option>
+<ion-option value="Republique_Beaux_Arts">Republique Beauxs Arts</ion-option>
+<ion-option value="Rihour">Rihour</ion-option>
+<ion-option value="Gare_Lille_Flandres">Gare Lille Flandres</ion-option>
+<ion-option value="Caulier">Caulier</ion-option>
+<ion-option value="Fives">Fives</ion-option>
+<ion-option value="Marbrerie">Marbrerie</ion-option>
+<ion-option value="Mairie_d_Hellememes">Mairie d Hellememes</ion-option>
+<ion-option value="Square_Flandres">Square Flandres</ion-option>
+<ion-option value="Pont_de_Bois">Pont de Bois</ion-option>
+<ion-option value="Villeneuve_d_Ascq_Hotel_de_ville">Villeneuve d Ascq Hotel de ville</ion-option>
+<ion-option value="Triolo">Triolo</ion-option>
+<ion-option value="Cite_Scientifique">Cite Scientifique</ion-option>
+<ion-option value="4_Cantons_Stade_Pierre_Mauroy">4 Cantons Stade Pierre Mauroy</ion-option>
+</ion-select>
+</ion-item>
+<ion-item>
+    <ion-label>Arrivée</ion-label>
+<ion-select (ionChange)="changeEnd($event)" color="twitter" >
+<ion-option value="St_philibert">St philibert </ion-option>
+<ion-option value="Bourg">Bourg </ion-option>
+<ion-option value="Maison_des_enfants">Maison des enfants </ion-option>
+<ion-option value="Mitterie">Mitterie</ion-option>
+<ion-option value="Pont_superieur">Pont superieur</ion-option>
+<ion-option value="Lomme_lambersart">Lomme lambersart</ion-option>
+<ion-option value="Canteleu">Canteleu</ion-option>
+<ion-option value="Bois_blancs">Bois blancs</ion-option>
+<ion-option value="Port_de_Lille">Port de Lille</ion-option>
+<ion-option value="Cormontaigne">Cormontaigne</ion-option>
+<ion-option value="Montebello">Montebello</ion-option>
+<ion-option value="Porte_des_postes">Porte des postes</ion-option>
+<ion-option value="Porte_d_Arras">Porte d Arras</ion-option>
+<ion-option value="Porte_de_Douai">Porte de Douai</ion-option>
+<ion-option value="Porte_de_Valenciennes">Porte de Valenciennes</ion-option>
+<ion-option value="Lille_Grand_Palais">Lille Grand Palais</ion-option>
+<ion-option value="Mairie_de_Lille">Mairie de Lille</ion-option>
+<ion-option value="Gare_Lille_Flandres">Gare Lille Flandres</ion-option>
+<ion-option value="Gare_Lille_Europe">Gare Lille Europe</ion-option>
+<ion-option value="St_Maurice_Pellevoisin">St Maurice Pellevoisin</ion-option>
+<ion-option value="Mons_Sarts">Mons Sarts</ion-option>
+<ion-option value="Mairie_de_Mons">Mairie de Mons</ion-option>
+<ion-option value="Fort_de_Mons">Fort de Mons</ion-option>
+<ion-option value="Les_Pres_Edgard_Pisani">Les Pres Edgard Pisani</ion-option>
+<ion-option value="Jean_Jaures">Jean_Jaures</ion-option>
+<ion-option value="Wasquehal_Pave_de_Lille">Wasquehal Pave de Lille</ion-option>
+<ion-option value="Wasquehal_Hotel_de_Ville">Wasquehal Hotel de ville</ion-option>
+<ion-option value="Wasquehal_Hotel_de_vCroix_Centreille">Croix Centre</ion-option>
+<ion-option value="Mairie_de_Croix">Mairie_de_Croix</ion-option>
+<ion-option value="Epeule_Montesquieu">Epeule Montesquieu</ion-option>
+<ion-option value="Charles_de_Gaulle">Charles de Gaulle</ion-option>
+<ion-option value="Euroteleport">Euroteleport</ion-option>
+<ion-option value="Roubaix_Grand_Place">Roubaix Grand Place</ion-option>
+<ion-option value="Gare_de_Roubaix">Gare de Roubaix</ion-option>
+<ion-option value="Alsace">Alsace</ion-option>
+<ion-option value="Mercure">Mercure</ion-option>
+<ion-option value="Carliers">Carliers</ion-option>
+<ion-option value="Gare_de_Tourcoing">Gare de Tourcoing</ion-option>
+<ion-option value="Tourcoing_Centre">Tourcoing Centre</ion-option>
+<ion-option value="Colbert">Colbert</ion-option>
+<ion-option value="Phalempins">Phalempins</ion-option>
+<ion-option value="Pont_de_Neuville">Pont de Neuville</ion-option>
+<ion-option value="Bourgogne">Bourgogne</ion-option>
+<ion-option value="CH_Dron">CH Dron</ion-option>
+<ion-option value="CHU_Eurasante">CHU Eurasante</ion-option>
+<ion-option value="CHU_Centre_O_Lambret">CHU Centre O Lambret</ion-option>
+<ion-option value="Porte_des_postes_b">Porte des postes</ion-option>
+<ion-option value="Wazemmes">Wazemmes</ion-option>
+<ion-option value="Gambetta">Gambetta</ion-option>
+<ion-option value="Republique_Beaux_Arts">Republique Beauxs Arts</ion-option>
+<ion-option value="Rihour">Rihour</ion-option>
+<ion-option value="Gare_Lille_Flandres_b">Gare Lille Flandres</ion-option>
+<ion-option value="Caulier">Caulier</ion-option>
+<ion-option value="Fives">Fives</ion-option>
+<ion-option value="Marbrerie">Marbrerie</ion-option>
+<ion-option value="Mairie_d_Hellememes">Mairie d Hellememes</ion-option>
+<ion-option value="Square_Flandres">Square Flandres</ion-option>
+<ion-option value="Pont_de_Bois">Pont de Bois</ion-option>
+<ion-option value="Villeneuve_d_Ascq_Hotel_de_ville">Villeneuve d Ascq Hotel de ville</ion-option>
+<ion-option value="Triolo">Triolo</ion-option>
+<ion-option value="Cite_Scientifique">Cite Scientifique</ion-option>
+<ion-option value="4_Cantons_Stade_Pierre_Mauroy">4 Cantons Stade Pierre Mauroy</ion-option>
+</ion-select>
+</ion-item>
+<ion-list radio-group>
+  <ion-list-header>
+    Horaires:
+  </ion-list-header>
+  <ion-item>
+    <ion-label>Matinée</ion-label>
+    <ion-radio  value="matin" (ionSelect)="changeHoraire($event)" ></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Soirée</ion-label>
+    <ion-radio value="soir" (ionSelect)="changeHoraire($event)"></ion-radio>
+  </ion-item>
+</ion-list>
+
+
+
+
+<ion-item *ngIf="stationstart && stationsend">
+
+ <button type="submit" ion-button outline item-right icon-left full class="">
+      <ion-icon name="search"></ion-icon>
+      Recherche
+    </button>
+
+</ion-item>
+<ion-item *ngIf="!stationstart && !stationsend">
+
+  <p>Vous devez remplir les deux stations pour faire votre recherche</p>
+
+</ion-item>
+</form>
+
+
+<div *ngIf="resultats">
+<ion-list  *ngFor="let etap of resultats">
+  <ion-item>
+    <ion-icon name="train" item-left></ion-icon>
+ 
+      {{etap.name}}
+         <ion-icon name="arrow-dropdown-circle" item-right></ion-icon>
+  </ion-item>
+</ion-list>
+<div class="padding">
+<button ion-button full> Temps  : {{ temps }} mns</button>
+</div>
+</div>
+
+</ion-content>
