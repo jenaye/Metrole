@@ -1,2 +1,11 @@
-Metrole
- to install don't forgot to " npm i " to get all node_modules
+# Metrole #
+Angular 2 App 
+
+![screen_of_the_shell](http://jenaye.fr/app.png)
+
+## Installation ##
+
+```
+npm i 
+
+```
